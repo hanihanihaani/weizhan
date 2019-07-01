@@ -18,7 +18,8 @@ const config = {
         }]
       ],
       plugins: [
-        'transform-decorators-legacy',
+        // 'transform-decorators-legacy',
+        'syntax-dynamic-import',
         'transform-class-properties',
         'transform-object-rest-spread'
       ]

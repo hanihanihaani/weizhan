@@ -1,12 +1,16 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text,WebView } from '@tarojs/components'
+import FirstTml from '../../components/first-tml'
+import CompanyMes from '../../components/company-mes'
 import './index.scss'
-import Tml from '../../components/first-tml'
+
 
 export default class Index extends Component {
 
   config = {
     navigationBarTitleText: '首页'
+  }
+  state = {
   }
   componentWillMount () { }
 
@@ -21,10 +25,10 @@ export default class Index extends Component {
   componentDidHide () { }
 
   render () {
+   
     return (
         <View className='index'>
-          <Tml />
-          <Text>hello world</Text>
+          <FirstTml />
         </View>
       )
   }
