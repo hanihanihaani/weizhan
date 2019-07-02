@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text,WebView } from '@tarojs/components'
-import FirstTml from '../../components/first-tml'
-import CompanyMes from '../../components/company-mes'
+import FirstTml from '@components/first-tml'
+import Table from '@components/table'
 import './index.scss'
 
 

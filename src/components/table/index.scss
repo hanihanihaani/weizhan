@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+.table-box {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  .table-wrap {
+    border-width: 4px 2px 2px 4px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    .table-item {
+      display: flex;
+    }
+    .item {
+      width:50%;
+      @include hidde;
+      padding: 0 10px;
+      display: block;
+      height: 70px;
+      line-height: 70px;
+      font-size: 28px;
+      color: #777;
+      border-right: 2px solid #cfcfcf;
+      border-bottom: 2px solid #cfcfcf;
+
+    }
+  }
+}

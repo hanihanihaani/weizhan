@@ -5,6 +5,12 @@ page {
     padding: 30px;
     box-sizing: border-box;
     background: #fff;
+    .phone-wrap {
+      display: flex;
+      .phone {
+        color: #ff8245;
+      }
+    }
     .item {
       display: block;
       margin-bottom: 20px;

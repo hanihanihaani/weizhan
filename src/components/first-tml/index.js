@@ -45,8 +45,14 @@ const itemList = [{
     let id = e.currentTarget.id
     if (id == 0) {
       Taro.navigateTo({url:'/pages/info/info'})
+    } else if (id == 1) {
+      Taro.navigateTo({url:'/pages/proCenter/proCenter'})
+    } else if (id == 2) {
+      Taro.navigateTo({url:'/pages/album/album'})
     } else if (id == 4) {
       Taro.navigateTo({url:'/pages/connect/connect'})
+    } else if (id == 5) { 
+      Taro.navigateTo({url:'/pages/trends/trends'})
     } 
   }
 

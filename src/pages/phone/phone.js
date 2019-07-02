@@ -1,11 +1,23 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image } from '@tarojs/components'
+import { View, Text, Image, Button } from '@tarojs/components'
 
  export default class Phone extends Component {
 
+  componentWillMount() {
+    
+  }
+ 
   componentDidMount () {}
 
-  componentDidShow () {}
+  componentDidShow () {
+    Taro.makePhoneCall({
+      phoneNumber:'18839967020'
+    })
+    .then(res => {
+      Taro.switchTab({url:'/pages/index/index'})
+    })
+    .catch(err => Taro.switchTab({url:'/pages/index/index'}))
+  }
 
   componentDidHide () {}
 
@@ -16,7 +28,6 @@ import { View, Text, Image } from '@tarojs/components'
   render () {
     return (
       <View>
-        <Text>this is phone page</Text>
       </View>
     )
   }

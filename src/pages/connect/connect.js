@@ -28,7 +28,10 @@ export default class CompanyConnect extends Component {
       <View className='connect-box'>
         <View className='connect-wrap'>
           <Text className='item'>联 系 人：大概是</Text>
-          <Text className='item'>联系电话：13412341234   |   010-55555555</Text>
+          <View className='phone-wrap'>
+            <Text className='item'>联系电话：</Text>
+            <Text className='item phone'>13412341234   |   010-55555555</Text>
+          </View>
           <Text className='item'>传 真：010-88889999</Text>
           <Text className='item'>邮政编码：100080</Text>
         </View>

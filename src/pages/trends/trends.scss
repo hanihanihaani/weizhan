@@ -1,0 +1,53 @@
+page {
+  background: #eee;
+  padding-bottom: 30px;
+}
+.trends-box {
+  .trend-item {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 16px 0;
+    .title {
+      display: block;
+      margin: 0 16px;
+      width: 95%;
+      line-height: 64px;
+      font-size: 32px;
+      color: #777;
+      border-bottom: 2px solid #d3d3d3;
+    }
+    .b-wrap {
+      display: flex;
+      padding: 16px;
+      .pic-wrap {
+        width: 240px;
+        height: 180px;
+        border: 2px solid #ccc;
+        .pic {
+          width: 240px;
+          height: 180px;
+        }
+      }
+      .b-right {
+        padding: 0 16px;
+        position: relative;
+        .con {
+          font-size: 28px;
+          color: #777;
+        }
+        .check-all {
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          font-size: 24px;
+          color: #F00
+        }
+      }
+    }
+  }
+  .mes-wrap {
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+}

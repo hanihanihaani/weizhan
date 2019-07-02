@@ -16,7 +16,10 @@ class App extends Component {
       'pages/index/index',
       'pages/phone/phone',
       'pages/info/info',
-      'pages/connect/connect'
+      'pages/connect/connect',
+      'pages/album/album',
+      'pages/trends/trends',
+      'pages/proCenter/proCenter'
     ],
     window: {
       backgroundTextStyle: 'light',
