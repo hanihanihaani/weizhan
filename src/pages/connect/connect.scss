@@ -5,8 +5,35 @@ page {
     padding: 30px;
     box-sizing: border-box;
     background: #fff;
+    .item-wrap {
+      display: flex;
+      .icon-per {
+        background: url(http://jic.makepolo.net/img/wei/wgw_web/icon_contact.png) no-repeat 0px 0px;
+        background-size: 100% auto;
+        width: 40px;
+        height: 40px;
+      }
+      .icon-cz {
+        background: url(http://jic.makepolo.net/img/wei/wgw_web/icon_contact.png) no-repeat 0px -120px;
+        background-size: 100% auto;
+        width: 40px;
+        height: 40px;
+      }
+      .icon-yz {
+        background: url(http://jic.makepolo.net/img/wei/wgw_web/icon_contact.png) no-repeat 0px -160px;
+        background-size: 100% auto;
+        width: 40px;
+        height: 40px;
+      }
+    }
     .phone-wrap {
       display: flex;
+      .icon-phone {
+        background: url(http://jic.makepolo.net/img/wei/wgw_web/icon_contact.png) no-repeat 0px -80px;
+        background-size: 100% auto;
+        width: 40px;
+        height: 40px;
+      }
       .phone {
         color: #ff8245;
       }
@@ -15,7 +42,8 @@ page {
       display: block;
       margin-bottom: 20px;
       font-size: 28px;
-      color: rgb(102,102,102)
+      color: rgb(102,102,102);
+      margin-left: 10px;
     }
   }
 }

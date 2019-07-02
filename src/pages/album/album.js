@@ -41,7 +41,9 @@ export default class CompanyAlbum extends Component {
         {
           albumList.map((album,index) => {
             return <View key={index} className='album-item'>
-                      <Image src={album.pic} className='pic' />
+                      <View className='pic-wrap'>
+                        <Image src={album.pic} className='pic' />
+                      </View>
                       <Text className='title'>{album.name}</Text>
                     </View>
           })

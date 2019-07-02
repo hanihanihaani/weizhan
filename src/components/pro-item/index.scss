@@ -1,0 +1,32 @@
+@import '../../styles/mixins.scss';
+.item-wrap {
+  display: flex;
+  background: #fff;
+  margin: 16px 0;
+  padding: 16px;
+  .pic-wrap {
+    width: 240px;
+    height: 180px;
+    .item-pic {
+      width: 240px;
+      height: 180px;
+    }
+  }
+  .item-r {
+    padding: 0 16px;
+    position: relative;
+    .con {
+      width: 95%;
+      font-size: 28px;
+      color: #777;
+      // @include hidde;
+    }
+    .mianyi {
+      position: absolute;
+      left: 16px;
+      bottom: 0;
+      color: #ff5d04;
+      font-size: 28px;
+    }
+  }
+}

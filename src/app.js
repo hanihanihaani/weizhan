@@ -19,13 +19,14 @@ class App extends Component {
       'pages/connect/connect',
       'pages/album/album',
       'pages/trends/trends',
-      'pages/proCenter/proCenter'
+      'pages/proCenter/proCenter',
+      'pages/proDetail/proDetail'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#4795ff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'white'
     },
     tabBar:{
       list:[{

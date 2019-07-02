@@ -1,15 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import Search from '@components/search'
-import ProItem from '@components/pro-item'
-import CompanyMes from '@components/company-mes'
-import './proCenter.scss'
+import './proDetail.scss'
 
-export default class ProCenter extends Component {
+export default class SecondTeml extends Component {
 
-  config = {
-    navigationBarTitleText: '产品中心'
-  }
   componentDidMount () {}
 
   componentDidShow () {}
@@ -24,10 +19,6 @@ export default class ProCenter extends Component {
     return (
       <View>
         <Search />
-        <ProItem />
-        <View className='mes-wrap'>
-          <CompanyMes />
-        </View>
       </View>
     )
   }

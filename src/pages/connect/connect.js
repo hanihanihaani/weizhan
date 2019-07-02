@@ -2,12 +2,6 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import './connect.scss'
 
-// 如果需要在 h5 环境中开启 React Devtools
-// 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
-
 export default class CompanyConnect extends Component {
 
   config = {
@@ -27,13 +21,23 @@ export default class CompanyConnect extends Component {
     return (
       <View className='connect-box'>
         <View className='connect-wrap'>
-          <Text className='item'>联 系 人：大概是</Text>
+          <View className='item-wrap'>
+            <Text className='icon-per'></Text>
+            <Text className='item'>联 系 人：大概是</Text>
+          </View>
           <View className='phone-wrap'>
+            <Text className='icon-phone'></Text>
             <Text className='item'>联系电话：</Text>
             <Text className='item phone'>13412341234   |   010-55555555</Text>
           </View>
-          <Text className='item'>传 真：010-88889999</Text>
-          <Text className='item'>邮政编码：100080</Text>
+          <View className='item-wrap'>
+            <Text className='icon-cz'></Text>
+            <Text className='item'>传 真：010-88889999</Text>
+          </View>
+          <View className='item-wrap'>
+            <Text className='icon-yz'></Text>
+            <Text className='item'>邮政编码：100080</Text>
+          </View>
         </View>
       </View>
     )
