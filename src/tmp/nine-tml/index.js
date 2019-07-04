@@ -17,7 +17,7 @@ const columnList = [{
 },{
   name:'联系我们',
 }] 
-export default class FourTml extends Component {
+export default class NineTml extends Component {
   static defaultProps = {
     list:[]
   }
@@ -46,20 +46,17 @@ export default class FourTml extends Component {
   componentDidCatchError () {}
 
   render () {
-
     return (
       <View>
         <AllSwiper list={this.props.list} />
         <View className='column-wrap' style={{height:utils.height}}>
           {
             columnList.map((column,index) => {
-              return <View className='column-item-wrap' key={index} id={index} onClick={this.jump}>
-                      <View className='column-items'>
-                        <View className='column-item'>
-                          <View className={`icon column-icon-${index}`}></View>
+              return <View className='column-item' key={index} id={index} onClick={this.jump}>
+                        <View className={`column-box-icon-${index} box-icon`}>
+                          <View className={`column-icon-${index} icon`}></View>
                         </View>
-                      </View>
-                      <Text className='name'>{column.name}</Text>
+                        <Text className='column-name'>{column.name}</Text>
                     </View>
             })
           }

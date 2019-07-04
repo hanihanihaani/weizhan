@@ -1,0 +1,52 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  width: auto;
+  overflow: hidden;
+  background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg.jpg) 0 0 no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  .column-item {
+    width: 33.3%;
+    height: auto;
+    text-align: center;
+    .box-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
+      width: 160px;
+      height: 180px;
+      margin-bottom: 0px;
+    }
+    .column-box-icon-0 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini01.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-box-icon-1 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini02.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-box-icon-2 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini03.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-box-icon-3 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini04.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-box-icon-4 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini05.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-box-icon-5 {
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg_mini06.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .column-name {
+      color: #666666;
+      font-size: 28px;
+      line-height: 104px;
+      display: block;
+    }
+  }
+}
