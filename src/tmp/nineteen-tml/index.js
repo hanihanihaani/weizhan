@@ -14,7 +14,9 @@ export default class NineteenTml extends Component {
           {
             utils.columnList.map((column,index) => {
               return <View className={`column-item-${index} column-item`} id={index} key={index} onClick={this.goColumn}>
-                      <View className={`column-icon-${index} icon`}></View>                      
+                      <View className='column-icon-wrap'>
+                        <View className={`column-icon-${index} icon`}></View>                      
+                      </View>
                       <Text className='name'>{column.name}</Text>
                     </View>
             })
