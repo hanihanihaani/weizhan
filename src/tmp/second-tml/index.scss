@@ -1,0 +1,48 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .column-item {
+        width: 45%;
+        height: 120px;
+        position: relative;
+        margin-bottom: 80px;
+        .column-icon-wrap {
+            width: 120px;
+            height: 120px;
+            margin: 0px auto;
+            background: #b4b7bc;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -12px;
+            z-index: 9;
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -40px;
+                margin-top: -40px;
+            }
+        }
+        .column-title {
+            width: auto;
+            height: 60px;
+            background: #fff;
+            border: 2px solid #b4b7bc;
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            line-height: 60px;
+            display: block;
+            border-radius: 16px;
+            padding: 0px 6px 0px 110px;
+            margin: 20px 0px;
+        }
+    }
+}

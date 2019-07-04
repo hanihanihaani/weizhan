@@ -1,12 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image,Swiper,SwiperItem } from '@tarojs/components'
+import { View, Text, Image } from '@tarojs/components'
+import AllSwiper from '@components/swiper'
 import './index.scss'
 
-// 如果需要在 h5 环境中开启 React Devtools
-// 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// 
 const itemList = [{
   name:'企业简介',
   img:'http://jic.makepolo.cn/img/wei/mb_img/mb_22/pic01.jpg',
@@ -33,14 +29,7 @@ const itemList = [{
   id:5
 }]
  export default class FirstTml extends Component {
-
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
+  
   jump (e) {
     let id = e.currentTarget.id
     if (id == 0) {
@@ -49,6 +38,8 @@ const itemList = [{
       Taro.navigateTo({url:'/pages/proCenter/proCenter'})
     } else if (id == 2) {
       Taro.navigateTo({url:'/pages/album/album'})
+    } else if (id == 3) {
+      Taro.navigateTo({url:'/pages/proHot/proHot'})
     } else if (id == 4) {
       Taro.navigateTo({url:'/pages/connect/connect'})
     } else if (id == 5) { 
@@ -56,27 +47,20 @@ const itemList = [{
     } 
   }
 
-  // 在 App 类中的 render() 函数没有实际作用
-  // 请勿修改此函数
+  componentDidMount () {
+  }
+
+  componentDidShow () {}
+
+  componentDidHide () {}
+
+  componentDidCatchError () {}
+ 
+
   render () {
     return (
       <View>
-        <View className='swiper-wrap'>
-          <Swiper 
-            className='swiper'
-            autoplay
-            indicatorDots
-            indicatorColor='#fff'
-            indicatorActiveColor='#04d8fb'
-          >
-            <SwiperItem>
-              <Image className='img' src={'http://img12.makepolo.cn/images/formals/img/banner/7/411/4_55f7113b8ae0ddbb7bf8c8b968461f7b.png'} />
-            </SwiperItem>
-            <SwiperItem>
-              <Image className='img' src={'http://jic.makepolo.net/img/channel/20190401/15540882872833.png'} />
-            </SwiperItem>
-          </Swiper>
-        </View>
+        <AllSwiper list={this.props.list} />
         <View className='item-wrap'>
           {
             itemList.map((item,index) => {

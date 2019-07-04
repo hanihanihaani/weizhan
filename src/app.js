@@ -1,13 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
+import { set as setGlobalData, get as getGlobalData } from '@utils/global_data.js'
 
 import './app.scss'
-
-// 如果需要在 h5 环境中开启 React Devtools
-// 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
 
 class App extends Component {
 
@@ -20,7 +15,8 @@ class App extends Component {
       'pages/album/album',
       'pages/trends/trends',
       'pages/proCenter/proCenter',
-      'pages/proDetail/proDetail'
+      'pages/proDetail/proDetail',
+      'pages/proHot/proHot'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -43,7 +39,11 @@ class App extends Component {
     },
   }
 
-  componentDidMount () {}
+  componentDidMount () {
+    // platid: 0 微信， 1 百度， 2 支付宝， 3 头条， 4 360
+    setGlobalData('corpid',100018362773)
+    setGlobalData('platid',0)
+  }
 
   componentDidShow () {}
 

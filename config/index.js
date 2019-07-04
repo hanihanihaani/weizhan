@@ -35,6 +35,7 @@ const config = {
     '@assets':path.resolve(__dirname,'..','src/assets'),
     '@pages':path.resolve(__dirname,'..','src/pages'),
     '@styles':path.resolve(__dirname,'..','src/pages'),
+    '@tmp':path.resolve(__dirname,'..','src/tmp'),
   },
   copy: {
     patterns: [

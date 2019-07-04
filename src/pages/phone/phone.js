@@ -1,5 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image, Button } from '@tarojs/components'
+import { set as setGlobalData, get as getGlobalData } from '@utils/global_data.js'
+
 
  export default class Phone extends Component {
 
@@ -10,12 +12,11 @@ import { View, Text, Image, Button } from '@tarojs/components'
   componentDidMount () {}
 
   componentDidShow () {
+    let phone = getGlobalData('phone')
     Taro.makePhoneCall({
-      phoneNumber:'18839967020'
+      phoneNumber:phone
     })
-    .then(res => {
-      Taro.switchTab({url:'/pages/index/index'})
-    })
+    .then(res => Taro.switchTab({url:'/pages/index/index'}))
     .catch(err => Taro.switchTab({url:'/pages/index/index'}))
   }
 
@@ -23,8 +24,6 @@ import { View, Text, Image, Button } from '@tarojs/components'
 
   componentDidCatchError () {}
 
-  // 在 App 类中的 render() 函数没有实际作用
-  // 请勿修改此函数
   render () {
     return (
       <View>
