@@ -13,6 +13,7 @@ import SevenTml from '@tmp/seven-tml'
 import EightTml from '@tmp/eight-tml'
 import NineTml from '@tmp/nine-tml'
 import TenTml from '@tmp/ten-tml'
+import ElevenTml from '@tmp/eleven-tml'
 
 import './index.scss'
 
@@ -64,45 +65,28 @@ export default class Index extends Component {
       Taro.showToast({title:err,icon:'none'})
     })
   }
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
   componentDidShow () {
     this.getIndex()
   }
-
-  componentDidHide () { }
-
   render () {
     const { focusList, indexTmp } = this.state
-    let showTmp
-    if (indexTmp == '45') {
-      showTmp = <FirstTml list={focusList} />
-    } else if (indexTmp == '46') {
-      showTmp = <SecondTml list={focusList} />
-    } else if (indexTmp == '47') {
-      showTmp = <ThreeTml list={focusList} />
-    } else if (indexTmp == '48') {
-      showTmp = <FourTml list={focusList} />
-    } else if (indexTmp == '49') {
-      showTmp = <FiveTml />
-    } else if (indexTmp == '50') {
-      showTmp = <SixTml list={focusList} />
-    } else if (indexTmp == '51') {
-      showTmp = <SevenTml list={focusList} />
-    } else if (indexTmp == '52') {
-      showTmp = <EightTml list={focusList} />
-    } else if (indexTmp == '53') {
-      showTmp = <NineTml list={focusList} />
-    } else if (indexTmp == '54') {
-      showTmp = <TenTml />
-    }
     return (
         <View className='index'>
-          {showTmp}
+          {
+            {
+              '45':<FirstTml list={focusList} />,
+              '46':<SecondTml list={focusList} />,
+              '47':<ThreeTml list={focusList} />,
+              '48':<FourTml list={focusList} />,
+              '49':<FiveTml />,
+              '50':<SixTml list={focusList} />,
+              '51':<SevenTml list={focusList} />,
+              '52':<EightTml list={focusList} />,
+              '53':<NineTml list={focusList} />,
+              '54':<TenTml />,
+              '55':<ElevenTml list={focusList} />
+            }[indexTmp]
+          }
         </View>
       )
   }

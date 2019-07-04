@@ -1,0 +1,57 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background: #d4d6cc;
+  overflow: hidden;
+  .column-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49.5%;
+    height: 232px;
+    border-right: 2px solid #aaaaaa;
+    position: relative;
+    border-bottom: 2px solid #aaaaaa;
+    .column-wrap-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 66px;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 0px;
+    }
+    .column-wrap-icon-0 {
+      background: #4cac7a;
+    }
+    .column-wrap-icon-1 {
+      background: #a790eb;
+    }
+    .column-wrap-icon-2 {
+      background: #fe9839;
+    }
+    .column-wrap-icon-3 {
+      background: #ff6184;
+    }
+    .column-wrap-icon-4 {
+      background: #3cb5fe;
+    }
+    .column-wrap-icon-5 {
+      background: #5ac3ca;
+    }
+  }
+  .column-item-1,.column-item-3,.column-item-5 {
+    border-right: none;
+  }
+  .column-item-4,.column-item-5 {
+    border-bottom: 0;
+  }
+  .column-name {
+    color: #353535;
+    font-size: 30px;
+    line-height: 140px;
+    display: block;
+    margin-left: 32px;
+  }
+}

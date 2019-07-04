@@ -16,7 +16,7 @@ const columnList = [{
 },{
   name:'联系我们',
 }] 
-export default class EightTml extends Component {
+export default class ElevenTml extends Component {
   static defaultProps = {
     list:[]
   }
@@ -43,11 +43,11 @@ export default class EightTml extends Component {
         <View className='column-wrap'>
           {
             columnList.map((column,index) => {
-              return <View className='column-item' key={index} id={index} onClick={this.jump}>
-                        <View className={`column-box-icon-${index} box-icon`}>
-                          <View className={`column-icon-${index} icon`}></View>
-                        </View>
-                        <Text className='column-name'>{column.name}</Text>
+              return <View className={`column-item-${index} column-item`} key={index} id={index} onClick={this.jump}>
+                      <View className={`column-wrap-icon-${index} column-wrap-icon`}>
+                        <View className={`column-icon-${index} icon`}></View>
+                      </View>
+                      <Text className='column-name'>{column.name}</Text>
                     </View>
             })
           }
