@@ -8,7 +8,7 @@ import SecondTml from '@tmp/second-tml'
 import ThreeTml from '@tmp/three-tml'
 import FourTml from '@tmp/four-tml'
 import FiveTml from '@tmp/five-tml'
-// import SixTml from '@tmp/six-tml'
+import SixTml from '@tmp/six-tml'
 
 import './index.scss'
 

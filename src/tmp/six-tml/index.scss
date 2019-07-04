@@ -1,0 +1,47 @@
+.column-wrap {
+  background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_27/menu_list_bg.jpg) 0 0 repeat-y;
+  width: 100%;
+  overflow: hidden;
+  .column-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 66px 0 64px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    height: 72px;
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      margin-top: 14px;
+    }
+    .column-icon-0 {
+      background: #67d69b;
+    }
+    .column-icon-1 {
+      background: #76cbe0;
+    }
+    .column-icon-2 {
+      background: #e8d26c;
+    }
+    .column-icon-3 {
+      background: #ff9976;
+    }
+    .column-icon-4 {
+      background: #5ac8ad;
+    }
+    .column-icon-5 {
+      background: #dd7796;
+    }
+    .column-name {
+      font-size: 32px;
+      text-align: left;
+      line-height: 72px;
+    }
+    .column-arrow {
+      width: 100px;
+      height: 72px;
+      background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_27/menu_but.jpg) no-repeat;
+    }
+  }
+}
