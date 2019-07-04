@@ -1,0 +1,46 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .column-item {
+    width: 33%;
+    height: auto;
+    text-align: center;
+    .box-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto;
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0px;
+      .icon {
+      }
+    }
+    .column-box-icon-0 {
+      background: linear-gradient(#88e474,#4fca50)
+    }
+    .column-box-icon-1 {
+      background: linear-gradient(#18cafd,#03aeea)
+    }
+    .column-box-icon-2 {
+      background: linear-gradient(#f5aa35,#f8902b)
+    }
+    .column-box-icon-3 {
+      background: linear-gradient(#9099f8,#6a70e9)
+    }
+    .column-box-icon-4 {
+      background: linear-gradient(#ff5a00,#e74c3b)
+    }
+    .column-box-icon-5 {
+      background: linear-gradient(#a6b0d2,#9f9cb6)
+    }
+    .column-name {
+      color: #222c2e;
+      font-size: 28px;
+      line-height: 104px;
+      display: block;
+    }
+  }
+}

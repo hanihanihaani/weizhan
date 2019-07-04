@@ -10,6 +10,7 @@ import FourTml from '@tmp/four-tml'
 import FiveTml from '@tmp/five-tml'
 import SixTml from '@tmp/six-tml'
 import SevenTml from '@tmp/seven-tml'
+import EightTml from '@tmp/eight-tml'
 
 import './index.scss'
 
@@ -90,6 +91,8 @@ export default class Index extends Component {
       showTmp = <SixTml list={focusList} />
     } else if (indexTmp == '51') {
       showTmp = <SevenTml list={focusList} />
+    } else if (indexTmp == '52') {
+      showTmp = <EightTml list={focusList} />
     }
     return (
         <View className='index'>
