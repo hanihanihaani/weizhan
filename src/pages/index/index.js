@@ -23,6 +23,7 @@ import EighteenTml from '@tmp/eighteen-tml'
 import NineteenTml from '@tmp/nineteen-tml'
 import TwentyTml from '@tmp/twenty-tml'
 import TwentyoneTml from '@tmp/twentyone-tml'
+import TwentytwoTml from '@tmp/twentytwo-tml'
 
 import './index.scss'
 
@@ -102,7 +103,8 @@ export default class Index extends Component {
               '35':<EighteenTml />,
               '31':<NineteenTml />,
               '30':<TwentyTml />,
-              '32':<TwentyoneTml />
+              '32':<TwentyoneTml />,
+              '24':<TwentytwoTml />
             }[indexTmp]
           }
         </View>
