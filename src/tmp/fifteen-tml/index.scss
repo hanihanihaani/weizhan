@@ -1,0 +1,28 @@
+
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .column-item {
+    width: 49.5%;
+    // height: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .column-name {
+      color: #ffffff;
+      font-size: 28px;
+      line-height: 70px;
+      display: block;
+      // margin-bottom: 20px;
+    }
+  }
+  .column-item-0,.column-item-3,.column-item-4 {
+    background: #29aeef;
+  }
+  .column-item-1,.column-item-2,.column-item-5 {
+    background: #4ebef7;
+  }
+  
+}

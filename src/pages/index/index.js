@@ -17,6 +17,7 @@ import ElevenTml from '@tmp/eleven-tml'
 import TwelveTml from '@tmp/twelve-tml'
 import ThirTeeTml from '@tmp/thirtee-tml'
 import FourteenTml from '@tmp/fourteen-tml'
+import FifteenTml from '@tmp/fifteen-tml'
 
 import './index.scss'
 
@@ -90,7 +91,8 @@ export default class Index extends Component {
               '55':<ElevenTml list={focusList} />,
               '56':<TwelveTml list={focusList} />,
               '57':<ThirTeeTml list={focusList} />,
-              '58':<FourteenTml list={focusList} />
+              '58':<FourteenTml list={focusList} />,
+              '59':<FifteenTml list={focusList} />
             }[indexTmp]
           }
         </View>
