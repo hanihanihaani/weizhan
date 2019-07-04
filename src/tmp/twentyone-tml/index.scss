@@ -1,0 +1,51 @@
+@import '../../styles/column-icon.scss';
+.twentyone-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(http://jic.makepolo.cn/img/wei/wgw_web/pic_bg9.jpg) no-repeat;
+  background-size: 100% 100%;
+  .column-wrap {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 130px;
+    .column-item {
+      display: flex;
+      width: 40%;
+      height: 72px;
+      border-radius: 0px 36px 36px 0px;
+      margin-bottom: 20px;
+      background: rgba(0,0,0,0.5);
+      .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 30px;
+        align-self: center;
+      }
+      .column-icon-1 {
+        background-position: 0px -100px;
+      }
+      .column-icon-2 {
+        background-position: 0px -200px;
+      }
+      .column-icon-3 {
+        background-position: 0px -50px;
+      }
+      .column-icon-4 {
+        background-position: 0px -897px;
+      }
+      .column-icon-5 {
+        background-position: 0px -250px;
+      }
+      .name {
+        color: #fff;
+        font-size: 30px;
+        line-height: 72px;
+      }
+    }
+  }
+}
