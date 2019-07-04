@@ -1,0 +1,44 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: 26px 0;
+  .column-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 170px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .column-item-0 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #48a672;
+  }
+  .column-item-1 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #d37256;
+  }
+  .column-item-2 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #3584bf;
+  }
+  .column-item-3 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #54c2bc;
+  }
+  .column-item-4 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #dc963b;
+  }
+  .column-item-5 {
+    background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_35/55555_05.png) 0 0 #b85e87;
+  }
+  .column-name {
+    color: #fff;
+    font-size: 30px;
+    line-height: 170px;
+    display: block;
+    margin-left: 32px;
+  } 
+}
