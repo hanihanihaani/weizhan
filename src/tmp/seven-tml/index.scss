@@ -1,0 +1,57 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .column-item {
+    width: 33%;
+    height: auto;
+    border-right: 2px solid #aaaaaa;
+    text-align: center;
+    .box-icon {
+      position: relative;
+      margin: 40px auto;
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      // margin-bottom: 0px;
+      .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+      }
+    }
+    .column-box-icon-0 {
+      background: #48cfae;
+    }
+    .column-box-icon-1 {
+      background: #ac92ec;
+    }
+    .column-box-icon-2 {
+      background: #4fc0e8;
+    }
+    .column-box-icon-3 {
+      background: #fc6e52;
+    }
+    .column-box-icon-4 {
+      background: #ffcf55;
+    }
+    .column-box-icon-5 {
+      background: #ed5564;
+    }
+    .column-name {
+      text-align: center;
+      color: #222c2e;
+      font-size: 28px;
+      line-height: 104px;
+      display: block;
+    }
+  }
+  .column-item-0,.column-item-1, .column-item-2 {
+    border-bottom: 2px solid #aaaaaa;
+  }
+  .column-item-2, .column-item-5 {
+    border-right: none;
+  }
+}
