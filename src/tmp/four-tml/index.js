@@ -4,47 +4,13 @@ import AllSwiper from '@components/swiper'
 import utils from '@utils/util'
 import './index.scss'
 
-const columnList = [{
-  name:'公司简介',
-},{
-  name:'产品中心',
-},{
-  name:'企业相册',
-},{
-  name:'公司动态',
-},{
-  name:'热销产品',
-},{
-  name:'联系我们',
-}] 
 export default class FourTml extends Component {
   static defaultProps = {
     list:[]
   }
-  jump (e) {
-    let id = e.currentTarget.id
-    if (id == 0) {
-      Taro.navigateTo({url:'/pages/info/info'})
-    } else if (id == 1) {
-      Taro.navigateTo({url:'/pages/proCenter/proCenter'})
-    } else if (id == 2) {
-      Taro.navigateTo({url:'/pages/album/album'})
-    } else if (id == 3) {
-      Taro.navigateTo({url:'/pages/trends/trends'})
-    } else if (id == 4) {
-      Taro.navigateTo({url:'/pages/proHot/proHot'})
-    } else if (id == 5) { 
-      Taro.navigateTo({url:'/pages/connect/connect'})
-    } 
+  goColumn(e) {
+    utils.jump(e.currentTarget.id)
   }
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
-
   render () {
 
     return (
@@ -52,8 +18,8 @@ export default class FourTml extends Component {
         <AllSwiper list={this.props.list} />
         <View className='column-wrap' style={{height:utils.height}}>
           {
-            columnList.map((column,index) => {
-              return <View className='column-item-wrap' key={index} id={index} onClick={this.jump}>
+            utils.columnList.map((column,index) => {
+              return <View className='column-item-wrap' key={index} id={index} onClick={this.goColumn}>
                       <View className='column-items'>
                         <View className='column-item'>
                           <View className={`icon column-icon-${index}`}></View>

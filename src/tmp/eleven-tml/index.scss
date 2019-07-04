@@ -13,6 +13,15 @@
     border-right: 2px solid #aaaaaa;
     position: relative;
     border-bottom: 2px solid #aaaaaa;
+    .shade {
+      position: absolute;
+      right: -14px;
+      bottom: -14px;
+      width: 28px;
+      height: 28px;
+      background: #d4d6cc;
+      z-index: 100;
+    }
     .column-wrap-icon {
       display: flex;
       justify-content: center;

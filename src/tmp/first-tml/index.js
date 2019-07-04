@@ -47,16 +47,6 @@ const itemList = [{
     } 
   }
 
-  componentDidMount () {
-  }
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
- 
-
   render () {
     return (
       <View>

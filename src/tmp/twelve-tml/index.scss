@@ -1,0 +1,38 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  overflow: hidden;
+  background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_33/content_bg.jpg) 0 0 no-repeat;
+  .column-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 49.5%;
+    height: auto;
+    border-right: 2px solid #9695af;
+    border-bottom: 2px solid #9695af;
+    .column-wrap-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      margin: 30px auto;
+      margin-bottom: 0px;
+      width: 140px;
+      height: 140px;
+      border: 4px solid #999999;
+    }
+    .column-name {
+      color: #ffffff;
+      font-size: 28px;
+      line-height: 70px;
+      display: block;
+    }
+  }
+  .column-item-1,.column-item-3,.column-item-5 {
+    border-right: none;
+  }
+}

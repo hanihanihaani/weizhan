@@ -4,7 +4,7 @@ import AllSwiper from '@components/swiper'
 import utils from '@utils/util'
 import './index.scss'
 
-export default class EightTml extends Component {
+export default class TwelveTml extends Component {
   static defaultProps = {
     list:[]
   }
@@ -15,14 +15,14 @@ export default class EightTml extends Component {
     return (
       <View>
         <AllSwiper list={this.props.list} />
-        <View className='column-wrap'>
+        <View className='column-wrap' style={{height:utils.height}}>
           {
             utils.columnList.map((column,index) => {
-              return <View className='column-item' key={index} id={index} onClick={this.goColumn}>
-                        <View className={`column-box-icon-${index} box-icon`}>
-                          <View className={`column-icon-${index} icon`}></View>
-                        </View>
-                        <Text className='column-name'>{column.name}</Text>
+              return <View className={`column-item-${index} column-item`} key={index} id={index} onClick={this.goColumn}>
+                      <View className='column-wrap-icon'>
+                        <View className={`column-icon-${index} icon`}></View>
+                      </View>
+                      <Text className='column-name'>{column.name}</Text>
                     </View>
             })
           }
