@@ -1,0 +1,52 @@
+@import '../../styles/column-icon.scss';
+.phone-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background: #4795ff;
+  box-sizing: border-box;
+  padding-right: 30px;
+  .phone-icon {
+    background: url(http://jic.makepolo.net/img/wei/wgw_web/icon.png) no-repeat;
+    background-position: 0px -350px;
+    width: 50px;
+    height: 50px;
+    background-size: 100% auto;
+    align-self: center;
+    margin-right: 20px;
+  }
+  .phone {
+    color: #fff;
+    font-size: 40px;
+  }
+}
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .column-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 200px;
+    .column-icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background: #4282e2;
+      border-radius: 16px;
+    }
+    .column-name {
+      color: #555;
+      font-size: 26px;
+      line-height: 70px;
+      display: block;
+    }
+  }
+}
