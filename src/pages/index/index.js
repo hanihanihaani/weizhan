@@ -28,6 +28,7 @@ import TwentythreeTml from '@tmp/twentythree-tml'
 import TwentyfourTml from '@tmp/twentyfour-tml'
 import TwentyfiveTml from '@tmp/twentyfive-tml'
 import TwentysixTml from '@tmp/twentysix-tml'
+import ThirtytwoTml from '@tmp/thirtytwo-tml'
 
 import './index.scss'
 
@@ -112,7 +113,8 @@ export default class Index extends Component {
               '23':<TwentythreeTml />,
               '42':<TwentyfourTml />,
               '22':<TwentyfiveTml list={focusList} />,
-              '41':<TwentysixTml list={focusList} />
+              '41':<TwentysixTml list={focusList} />,
+              '39':<ThirtytwoTml list={focusList} />
             }[indexTmp]
           }
         </View>
