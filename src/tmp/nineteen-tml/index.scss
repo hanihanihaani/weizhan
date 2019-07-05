@@ -14,6 +14,7 @@
     bottom: 150px;
     .column-item {
       display: flex;
+      align-items: center;
       width: 60%;
       height: 92px;
       border-radius: 0px 16px 16px 0px;
@@ -21,7 +22,6 @@
       .icon {
         margin-right: 20px;
         margin-left: 30px;
-        align-self: center;
       }
       .name {
         color: #fff;
