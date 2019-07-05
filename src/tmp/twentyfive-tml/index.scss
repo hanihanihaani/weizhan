@@ -1,0 +1,25 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .column-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 180px;
+    margin-top: 30px;
+    background: #1aa6fe;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    .column-name {
+      color: #fff;
+      font-size: 26px;
+      line-height: 36px;
+      display: block;
+    }
+  }
+}
