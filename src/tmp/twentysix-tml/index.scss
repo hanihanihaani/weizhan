@@ -1,0 +1,31 @@
+.column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0 30px;
+  box-sizing: border-box;
+  .column-item {
+    width: 30%;
+    margin-top: 30px;
+    .icon-wrap {
+      text-align: center;
+      line-height: 128px;      
+      width: 100%;
+      height: 128px;
+      background: #fff;
+      .img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .column-name {
+      background: url(http://jic.makepolo.cn/img/wei/wgw_web/txt_bg.jpg);
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      font-size: 26px;
+      line-height: 60px;
+      display: block;
+    }
+  }
+}
