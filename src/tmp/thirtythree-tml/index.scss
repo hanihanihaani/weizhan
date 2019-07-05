@@ -1,0 +1,45 @@
+@import '../../styles/column-icon.scss';
+.column-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  box-sizing: border-box;
+  .column-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px 0;
+    .column-name {
+      color: #fff;
+      font-size: 26px;
+      line-height: 36px;
+      display: block;
+    }
+  }
+  .column-item-0,.column-item-5 {
+    width: 48%;
+  }
+  .column-item-0 {
+    background: #59d400;
+  }
+  .column-item-1 {
+    background: #1fc5af;
+  }
+  .column-item-2 {
+    background: #207cc5;
+  }
+  .column-item-3 {
+    background: #eea200;
+  }
+  .column-item-4 {
+    background: #ee7001;
+  }
+  .column-item-5 {
+    background: #ed3801;
+  }
+}
