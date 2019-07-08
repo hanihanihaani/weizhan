@@ -4,10 +4,12 @@
   overflow: hidden;
   background: url(http://jic.makepolo.cn/img/wei/mb_img/mb_30/bg.jpg) 0 0 no-repeat;
   display: flex;
+  align-content: center;
   flex-wrap: wrap;
   .column-item {
     width: 33.3%;
     height: auto;
+    margin-bottom: 80px;
     text-align: center;
     .box-icon {
       display: flex;

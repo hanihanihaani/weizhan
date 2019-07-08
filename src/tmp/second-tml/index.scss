@@ -1,17 +1,20 @@
 @import '../../styles/column-icon.scss';
 .column-wrap {
     width: 100%;
+    height: auto;
     padding: 0 30px;
     margin-top: 50px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    // align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     .column-item {
         width: 45%;
         height: 120px;
         position: relative;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
         .column-icon-wrap {
             width: 120px;
             height: 120px;

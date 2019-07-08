@@ -15,7 +15,7 @@ export default class ThirtytwoTml extends Component {
     return (
       <View>
         <AllSwiper list={this.props.list} />
-        <View className='column-wrap'>
+        <View className='column-wrap' style={{height:utils.height}}>
           {
             utils.columnList.map((column,index) => {
               return <View className='column-item' key={index} id={index} onClick={this.goColumn}>

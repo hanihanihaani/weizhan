@@ -2,10 +2,12 @@
 .column-wrap {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   .column-item {
     width: 33%;
     height: auto;
     text-align: center;
+    margin-bottom: 100px;
     .box-icon {
       display: flex;
       justify-content: center;
@@ -15,8 +17,6 @@
       width: 100px;
       height: 100px;
       margin-bottom: 0px;
-      .icon {
-      }
     }
     .column-box-icon-0 {
       background: linear-gradient(#88e474,#4fca50)

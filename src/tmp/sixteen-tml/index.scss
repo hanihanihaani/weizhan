@@ -25,7 +25,7 @@
 .column-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 200px;
   .column-item {
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@
     align-items: center;
     width: 33.3%;
     height: 200px;
+    margin-bottom: 80px;
     .column-icon-wrap {
       display: flex;
       justify-content: center;
